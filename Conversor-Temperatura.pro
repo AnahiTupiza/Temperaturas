@@ -18,7 +18,20 @@ HEADERS += \
 FORMS += \
     conversor.ui
 
+TRANSLATIONS += \
+     Conversor-Temperatura_jp.ts \
+     Conversor-Temperatura_ru.ts \
+     Conversor-Temperatura_cn.ts
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    recursos.qrc
+
+DISTFILES += \
+    Conversor-Temperatura_cn.qm \
+    Conversor-Temperatura_jp.qm \
+    Conversor-Temperatura_ru.qm
